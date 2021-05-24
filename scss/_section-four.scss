@@ -1,0 +1,100 @@
+.section-four {
+  background-color: white;
+  height: 150vh;
+  padding-top: 8rem;
+}
+
+.interest-image {
+  display: flex;
+  max-width: 900px;
+  justify-content: center;
+  position: relative;
+
+  img {
+    position: relative;
+    left: -10%;
+    width: 60%;
+    z-index: 6;
+  }
+
+  &::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-image: url("/images/yello-circle-image.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 20%;
+    left: 25%;
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+.interest-text {
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: $dark;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: $mobile-view) {
+
+  .interest-container {
+    width: 90vw;
+    height: 40vh;
+    position: relative;
+
+    border-radius: 10px;
+    margin: auto;
+
+    background-color: $dark;
+
+
+    &::after {
+        content: '';
+        background-image: url("/images/interest-bg-right.svg");
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        z-index: 0;
+    }
+     &::before {
+        content: '';
+        background-image: url("/images/interest-bg-left.svg");
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-position: bottom left;
+        z-index: 1;
+    }
+  }
+
+  .interest-text {
+    position: absolute;
+    padding: 2rem;
+    z-index: 5;
+background-color: none;
+    width: 50%;
+
+    .btn {
+      max-width: 200px;
+    }
+  }
+  .interest-image {
+    width: 60%;
+    position: absolute;
+    right: -10%;
+    bottom: 0;
+  }
+}

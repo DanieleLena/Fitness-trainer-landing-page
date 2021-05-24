@@ -1,0 +1,55 @@
+
+
+
+$primary-yellow: #FFDF70;
+$dark: #313131;
+$light: #715800;
+$gray: #E2E2E2;
+$bebas-font:  'Bebas Neue', cursive;
+$montserrat-font: 'Montserrat', sans-serif;
+$north-font: "North",sans-serif;
+
+$mobile-view: 950px;
+
+@font-face {
+  font-family: "North";
+  src: url('../../fonts/North/North.otf');
+}
+
+* {
+   h2 {
+        font-family: $north-font;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        font-family: $bebas-font;
+        font-weight: 200;
+        margin-bottom: 1rem;
+
+    }
+    h4 {
+        font-family: $bebas-font;
+        font-weight: 200;
+        margin-bottom: 1rem;
+        color: gray;
+    }
+     p {
+        font-family: $montserrat-font;
+    }
+}
+
+ul {
+  list-style: none;
+}
+
+
+.btn {
+  background: $primary-yellow;
+  text-transform: uppercase;
+  font-family: $north-font;
+  font-size: .6rem;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}

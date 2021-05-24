@@ -1,0 +1,215 @@
+@import "variables";
+@import "section-two";
+@import "section-three";
+@import "section-four";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background: #202020;
+  // background: linear-gradient(89.01deg, #202020 35.38%, rgba(0, 0, 0, 0) 73.95%);
+}
+
+.header {
+  width: 100%;
+ 
+
+
+
+  background: linear-gradient(
+    89.01deg,
+    #202020 35.38%,
+    rgba(0, 0, 0, 0) 73.95%
+  );
+}
+.header-main {
+  width: 90%;
+  margin: auto;
+
+  
+  z-index: 1;
+  position: relative;
+  //   border: 3px solid yellow;
+}
+#header-right-line {
+  position: absolute;
+  // max-height: 50%;
+  z-index: -1;
+  right: 0;
+}
+#header-left-line {
+  position: absolute;
+  height: 150vh;
+  left: -9vw;
+
+  z-index: -100;
+}
+
+// NAV ======================================================
+nav {
+  width: 100%;
+  font-family: $north-font;
+  z-index: 100;
+//   background-color: yellowgreen;
+
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding-top: 2rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  li {
+    margin-right: 1rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btn {
+    padding: 0.5rem 1.5rem;
+  }
+}
+.logo {
+  text-transform: uppercase;
+  color: $primary-yellow;
+  font-size: 1rem;
+  cursor: pointer;
+}
+// NAV ======================================================
+
+.header-content {
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  // left: 10vw;
+  bottom: 0;
+  
+}
+#header-cirlce-yellow {
+  position: absolute;
+  // max-width: 100%;
+  // left: 50%;
+  top: 20%;
+
+  z-index: 2;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  
+}
+
+.circle-bg {
+  width: 50%;
+  // height: 10vh;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  background: radial-gradient(
+    43.87% 43.87% at 51.9% 42.65%,
+    #2f2f2fb2 36.27%,
+    rgba(32, 32, 32, 0) 100%
+  );
+}
+.header-text-container {
+  font-family: $north-font;
+  padding: 5rem;
+
+  h2 {
+    color: $primary-yellow;
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+  }
+  h1 {
+    color: $primary-yellow;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-family: $bebas-font;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+  }
+  ul {
+    font-family: $bebas-font;
+    color: rgba(255, 255, 255, 0.644);
+    margin-bottom: 2rem;
+    li {
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.1rem;
+
+      span {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+}
+.header-footer {
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+}
+
+
+@media (max-width: 1100px) {
+
+  #header-right-line,
+  #header-left-line {
+    display: none;
+  }
+
+  .header-content {
+    margin-top: 4rem;
+    
+  }
+
+  .hero-container{
+    display: none;
+ 
+  }
+  
+  .header-text-container {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+
+    h2 {
+
+    font-size: .6rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+    
+}
+}
+
+@media (max-width: 800px) {
+nav {
+
+  ul{
+   display: none; 
+  }
+  
+}
+}

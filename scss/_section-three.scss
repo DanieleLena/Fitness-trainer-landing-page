@@ -1,0 +1,154 @@
+.section-three {
+  width: 100%;
+  background-color: white;
+}
+.education-container {
+  width: 90%;
+  margin: auto;
+}
+.education {
+  p {
+    // padding-bottom: 1.5rem;
+  }
+  h4 {
+    color: #a15547;
+  }
+
+  .btn {
+    // padding-bottom: 1.5rem;
+    // padding-top: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .btn:nth-child(6) {
+    background-color: $dark;
+    color: white;
+  }
+}
+.education-image {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 2rem;
+  img {
+    width: 50%;
+    z-index: 1;
+  }
+}
+.education-image::after {
+  content: "";
+  background-image: url(/images/bg-sofia.svg);
+
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+
+  background-color: #313131;
+  object-fit: fill;
+
+  z-index: 0;
+}
+.education-image::before {
+  content: "Angela Lopez";
+
+  font-family: $north-font;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+
+  position: absolute;
+  width: 44%;
+  height: 20%;
+  background-color: #313131;
+  border: 5px solid white;
+  top: 70%;
+  left: 0%;
+  z-index: 2;
+  border-radius: 5px 5px 5px 60px;
+}
+
+.stats-container {
+  background-color: $dark;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  color: $primary-yellow;
+  gap: 1rem;
+}
+.stats-container::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/bg-sofia.svg);
+
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.stat {
+  text-align: center;
+  margin: 2rem 0;
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    color: white;
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: $mobile-view) {
+  .education-container {
+    position: relative;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .education-container::after {
+    content: "";
+    background-image: url(/images/education-bg-yellow.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position:  bottom right;
+    background-repeat: no-repeat;
+    
+    z-index: -1;
+  }
+  .education {
+    width: 40%;
+  }
+  .education-image {
+    width: 50%;
+    min-height: 500px;
+  }
+
+  .stats-container {
+      align-items: center;
+      height: 25vh;
+  }
+  .stat {
+      h2 {
+          font-size: 2rem;
+      }
+      p {
+          font-size: .8rem;
+      }
+  }
+}
