@@ -183,8 +183,11 @@
     padding-bottom: 5rem;
   }
   .card {
-    // margin-right: 2rem;
     min-width: 300px;
-    // max-width: 300px;
+    transition: 0.3s ease-out all;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }

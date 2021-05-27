@@ -38,6 +38,10 @@ $mobile-view: 950px;
     }
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 ul {
   list-style: none;
 }
@@ -52,4 +56,8 @@ ul {
   border-radius: 5px;
   cursor: pointer;
   border: none;
+}
+.btn:hover {
+transform: scale(0.98);
+color: $light;
 }

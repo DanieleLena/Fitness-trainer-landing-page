@@ -1,116 +1,180 @@
-
 .section-six {
-    padding-top: 3rem;
-    background-color: white;
-    text-align: center;
+  padding-top: 3rem;
+  background-color: white;
+  text-align: center;
 }
 
 .blog-title {
-    margin-bottom: 2rem;
-    svg {
-        width: 100%;
-    }
+  margin-bottom: 2rem;
+  svg {
+    width: 100%;
+  }
 }
 
 .blog-columns-container {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
 .blog-column-article {
+  margin-bottom: 2rem;
+
+  img {
+    width: 100%;
     margin-bottom: 2rem;
+  }
 
-    img {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .blog-author {
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
 
-    svg {
-        margin-right: 1rem;
-    }
+  svg {
+    margin-right: 1rem;
+  }
 
-    h3 {
-        margin: 0;
-    }
+  h3 {
+    margin: 0;
+  }
 }
 .blog-column-list {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .list-article {
-    display: flex;
-    padding: 1rem;
-    justify-content: space-between;
-    text-align: start;
-h3 {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  text-align: start;
+  h3 {
     margin: 0;
-}
-    img {
-        width: 20%;
-    }
+  }
+  img {
+    width: 20%;
+  }
 }
 
+.appointment-container {
+  background-color: $dark;
+  padding: 10%;
+  margin: auto;
+  color: white;
+}
+
+.appointment-left {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+
+  img {
+    margin-bottom: -2rem;
+  }
+  h3 {
+    color: $primary-yellow;
+    font-size: 2rem;
+    font-family: $bebas-font;
+  }
+}
+.appointment-right {
+  position: relative;
+  z-index: 0;
+  img {
+    width: 100%;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    background-color: $primary-yellow;
+    top: -5%;
+    left: 30%;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    border: 2px solid $primary-yellow;
+    bottom: 5%;
+    border-radius: 10px;
+    z-index: -1;
+  }
+}
 
 @media (min-width: $mobile-view) {
+  .blog-title {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 3rem;
+    h2 {
+      margin: 0;
+      position: relative;
+      margin-right: 4rem;
 
-    .blog-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3rem;
-        h2 {
-            margin: 0;
-            position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 3px;
+        background-color: #f8bf99;
+        bottom: -1.5rem;
+        left: 0;
+      }
+    }
+    svg {
+      width: 60%;
+    }
+  }
 
-            &::after {
-                content: '';
-                position: absolute;
-                width: 40%;
-                height: 3px;
-                background-color:#F8BF99;
-                bottom: -1.5rem;
-                left: 0;
-            }
-        }
-        svg {
-            width: 50%;
-        }
-    }
+  .blog-columns-container {
+    display: flex;
+    gap: 2rem;
+  }
+  .blog-column-article {
+    max-width: 30%;
+    text-align: start;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
 
-    .blog-columns-container {
-        display: flex;
-        gap: 2rem;
+    &:hover {
+      background-color: #f1f1f1;
     }
-    .blog-column-article {
-        max-width: 30%; 
-        text-align: start;
-        padding: 1rem;
-        border-radius: 10px;
-        cursor: pointer;
-        
-        &:hover {
-            background-color: #f1f1f1;
-        }
+  }
+  .list-article {
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f1f1f1;
     }
-    .list-article {
-        border-radius: 10px;
-        cursor: pointer;
-        
-        &:hover {
-            background-color: #f1f1f1;
-        }
-    }
-   
-    
+  }
+  .appointment-container {
+    padding: 0;
+  }
+  .appointment-title {
+    padding: 2rem 0;
+  }
+  .appointment-flex {
+    display: flex;
+    width: 70%;
+    margin: auto;
+  }
+  .appointment-right,
+  .appointment-left {
+    margin: auto;
+  }
 }
