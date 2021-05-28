@@ -95,7 +95,11 @@ nav {
 .mobile-menu {
   max-height: 0;
   overflow: hidden;
-  
+  transition: 3s max-height ease-out;
+}
+
+.hide-icon {
+  display: none;
 }
 //MOBILE MENU ===============================================
 
@@ -220,15 +224,43 @@ nav {
     }
   }
   .hamburger-menu {
-  display: block;
- cursor: pointer;
-  fill: $primary-yellow;
-}
-.mobile-menu {
-  max-height: 1000px;
-  background-color: white;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-}
+    display: block;
+    cursor: pointer;
+    fill: $primary-yellow;
+  }
+  .mobile-menu-open {
+    max-height: 2000px;
+    height: 90vh;
+    background-color: #212121;
+
+    ul {
+      padding-top: 10vh;
+      margin-bottom: 4rem;
+    }
+    li {
+      color: #d4cfcf;
+      font-family: $north-font;
+      margin-bottom: 2rem;
+      padding-left: 0.5rem;
+      transition: 0.2s ease-out transform;
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: -4px 9px 0px -5px $primary-yellow;
+      }
+    }
+
+    .icons-container {
+      margin: auto;
+      padding: 0;
+      width: 50%;
+      .icon {
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+      .icon:hover {
+        background-color: white;
+      }
+    }
+  }
 }
