@@ -132,7 +132,9 @@
   .interest-container {
     width: 90vw;
     height: 40vh;
+    max-height: 350px;
     position: relative;
+    border-radius: 10px;
 
     border-radius: 10px;
     margin: auto;
