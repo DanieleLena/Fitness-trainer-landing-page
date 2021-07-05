@@ -32,8 +32,11 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        
     }
+  .btn:hover {
+  transform: scale(0.98);
+//   color: $light;
+}
 }
 footer {
     width: 90%;

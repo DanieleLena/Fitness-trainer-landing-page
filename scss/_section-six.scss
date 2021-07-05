@@ -44,12 +44,13 @@
   }
 }
 .blog-column-list {
+ 
   display: flex;
   flex-direction: column;
 }
 .list-article {
   display: flex;
-  padding: 1rem;
+  padding: 1.5rem;
   justify-content: space-between;
   text-align: start;
   h3 {

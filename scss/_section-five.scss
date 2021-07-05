@@ -207,6 +207,11 @@
       display: flex;
     }
   }
+  .faqBtn:hover {
+    color: $primary-yellow;
+    background-color: $light;
+    opacity: .7;
+  }
   .btn-active {
     background-color: $light;
     color: $primary-yellow;
