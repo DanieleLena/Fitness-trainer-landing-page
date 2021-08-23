@@ -15,7 +15,7 @@
 ## Overview
 
 ### Intro
-Hello! This is my implementation of a design that i found on [Dibble.com](https://dribbble.com/). I followed a figma sketch. That was a relatively simple challenge but still there was a room to try some new things and learn new approaches. 
+Hello! This is my implementation of a design that i found on [Dribbble.com](https://dribbble.com/). I followed a figma sketch. That was a relatively simple challenge but still there was a room to try some new things and learn new approaches. 
 
 ![The figma sketch](https://github.com/DanieleLena/Fitness-trainer-landing-page/blob/main/images/design%20fitness%20landing%20page.png?raw=true)
 
